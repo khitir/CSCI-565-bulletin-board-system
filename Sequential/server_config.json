@@ -1,0 +1,9 @@
+{
+    "coordinator_address": ["localhost", 8000],
+    "server_addresses": [
+      ["localhost", 8000],
+      ["localhost", 8001],
+      ["localhost", 8002]
+    ]
+  }
+  

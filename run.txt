@@ -1,0 +1,46 @@
+Sequential / ryw / quorum 
+
+python server.py localhost 8000 true server_config.json
+
+python server.py localhost 8001 false server_config.json
+
+python server.py localhost 8002 false server_config.json
+
+python client.py server_config.json
+
+
+
+
+combined
+
+server ------------
+
+python server.py localhost 8000 true
+
+python server.py localhost 8001 false
+
+python server.py localhost 8002 false
+
+
+
+localhost:8001
+localhost:8002
+
+
+localhost:8000
+localhost:8002
+
+localhost:8000
+localhost:8001
+
+
+
+client -----------
+
+python client.py
+
+localhost:8000
+localhost:8001
+localhost:8002
+
+
